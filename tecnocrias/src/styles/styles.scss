@@ -1,2 +1,3 @@
-@import "./base/variables/variables";
-@import "./global.scss";
+@use "./global.scss";
+@use "./base/variables";
+@use "./base/mixins/positions";
