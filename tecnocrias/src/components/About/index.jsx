@@ -15,9 +15,16 @@ export const About = () => {
       </div>
 
       <div className={styles.box_icon}>
-        <img src={githubImg} alt="" />
-        <img src={discordImg} alt="" />
-        <img src={contactImg} alt="" />
+        <a href="https://github.com/tecnocrias">
+          <img src={githubImg} alt="" />
+        </a>
+        <a href="https://discord.gg/adxvNfMM88">
+          <img src={discordImg} alt="" />
+        </a>
+        <a href="https://discord.gg/adxvNfMM88">
+          <img src={contactImg} alt="" />
+        </a>
+        
       </div>
 
     </section>

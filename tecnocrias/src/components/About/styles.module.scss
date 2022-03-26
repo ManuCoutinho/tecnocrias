@@ -6,4 +6,53 @@
   width: 80vw;
   padding: 1rem;
   margin: $margin_default;
+
+  @include flex(center);
+  flex-direction: column;
+
+  h2 {
+    margin: 1rem auto;
+  }
 }
+
+.box_item {
+  @include flex(justify-content);
+  flex-direction: row;
+
+  .box_text {
+    display: block;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem 2rem;
+
+    background: rgba(31, 31, 31, 0.8);
+    border-radius: $radius;
+
+    @include flex(justify-content);
+    flex-direction: column;
+
+    h3 {
+      margin: 0.5rem auto;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+}
+
+.box_icon {
+  margin-top: 3rem;
+
+  @include flex(justify-content);
+  flex-direction: row;
+
+  img {
+    width: 50%;
+    margin: 0 2.5rem;
+  }
+}
+

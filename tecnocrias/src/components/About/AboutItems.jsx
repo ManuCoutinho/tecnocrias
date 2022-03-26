@@ -8,15 +8,15 @@ export const AboutItems = () => {
   ];
 
   return (
-    <div className={styles.box_text}>
+    <>
       {items.map((item) => {
         return (
-          <>
+          <div className={styles.box_text}>
           <h3>{item.title}</h3>
           <p>{item.text}</p>
-          </>
+          </div>
         );
       })}
-    </div>
+    </>
   );
 };
