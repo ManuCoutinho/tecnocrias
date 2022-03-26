@@ -1,0 +1,51 @@
+@import "../../styles//base/mixins/positions";
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins/animations";
+
+.container {
+  width: 80vw;
+  padding: 1rem;
+  margin: $margin_default;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+font-weight: 700;
+font-size: 1.7rem;
+margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  }
+
+.card {
+  background-color: var(--info);
+  color: var(--text);
+  //width: 14rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  font-family: "Roboto";
+  margin: 0.5rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 3px 9px var(--highlight));
+  transform: scale(1.02);
+}
+
+
+  
+  
