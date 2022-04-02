@@ -10,9 +10,7 @@ export const About = () => {
 
       <h2>Sobre</h2>
 
-      <div className={styles.box_item}>
-        <AboutItems />
-      </div>
+      <AboutItems />
 
       <div className={styles.box_icon}>
         <a href="https://github.com/tecnocrias">
