@@ -1,13 +1,19 @@
 import styles from "./styles.module.scss";
 import React from "react";
+import CardsItems from "./CardsItems";
 
-export function Card(props) {
-    return (
-        <a href="#">
-            <div className={styles.card}>
-                <h3>{props.title}</h3>
-                <p>{props.text}</p>
-            </div>
-        </a>
-    )
+export const Card = () => {
+
+    function getCardsItem() {
+        return CardsItems.map(cards => {
+            return <a href={cards.link}>
+                <div className={styles.card}>
+                    <h3>{cards.title}</h3>
+                    <p>{cards.text}</p>
+                </div>
+            </a>
+        })
+    }
+return (getCardsItem())
 }
+

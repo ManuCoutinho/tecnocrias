@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import {Card} from "./Card";
+import { Card } from "./Card";
 
 
 export const Desafios = () => {
@@ -9,12 +9,7 @@ export const Desafios = () => {
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         Natus numquam commodi omnis deleniti! Reprehenderit fuga quos cupiditate et.</p>
       <div className={styles.cardsContainer}>
-        <div className={styles.grid}>
-        <Card title="100 dias de código" text="Lorem ipsum dolor sit amet consectetur adipisicing elit."></Card>
-        <Card title="100 dias de código" text="Lorem ipsum dolor sit amet consectetur adipisicing elit."></Card>
-        <Card title="100 dias de código" text="Lorem ipsum dolor sit amet consectetur adipisicing elit."></Card>
-        <Card title="100 dias de código" text="Lorem ipsum dolor sit amet consectetur adipisicing elit."></Card>
-        </div>
+       <Card />
       </div>
 
     </div>
