@@ -1,17 +1,17 @@
-@import '../../styles//base/mixins/positions';
+@import '../../styles/mixins/positions';
 @import '../../styles/base/variables';
-@import '../../styles/base/mixins/animations';
+@import '../../styles/mixins/animations';
 
 .container {
   @include flex(space-between);
   height: 8rem;
   width: 80vw;
   padding: 1rem;
-  margin: $margin_default;
+  margin: $global_margin_default;
 }
 
 .logo {
-  color: var(--primary);
+  color: $primary;
   padding: 0.5rem;
   h1 {
     font-size: 3rem;
@@ -35,7 +35,7 @@
   @include transitionHover(color);
 
   &:hover {
-    color: lighten(rgba(0, 253, 161), 0.5);
+    color: lighten($primary, 0.5);
     transform: scale(1.1);
     @include transitionHover(color);
   }

@@ -1,13 +1,13 @@
-@import '../../styles//base/mixins/positions';
+@import '../../styles/mixins/positions';
 @import '../../styles/base/variables';
-@import '../../styles/base/mixins/animations';
+@import '../../styles/mixins/animations';
 
 .container {
   width: 80vw;
   padding: 1rem;
-  margin: $margin_default;
+  margin: $global_margin_default;
   text-align: center;
-  color: #fff;
+  color: $white;
 }
 
 h2 {
@@ -31,17 +31,15 @@ h2 {
 }
 
 .card {
-  background-color: var(--info);
-  color: var(--text);
-  //width: 14rem;
+  background-color: $info;
+  color: $text;
   padding: 2rem 1.5rem;
-  border-radius: 1.2rem;
-  font-family: 'Roboto';
+  border-radius: $global_radius;
   margin: 0.5rem;
 }
 
 .card:hover {
   cursor: pointer;
-  filter: drop-shadow(5px 3px 9px var(--highlight));
+  filter: drop-shadow(5px 3px 9px $highlight);
   transform: scale(1.02);
 }

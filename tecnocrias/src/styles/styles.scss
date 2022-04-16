@@ -1,3 +1,5 @@
-@use "./global.scss";
-@use "./base/variables";
-@use "./base/mixins/positions";
+@use './base/global';
+@use './base/variables';
+@use './mixins/positions';
+@use './base/breakpoints';
+@use './vendor/normalize';
