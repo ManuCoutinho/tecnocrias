@@ -1,6 +1,6 @@
-@import "../../styles//base/mixins/positions";
-@import "../../styles/base/variables";
-@import "../../styles/base/mixins/animations";
+@import '../../styles//base/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/base/mixins/animations';
 
 .container {
   @include flex(space-between);

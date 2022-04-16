@@ -1,6 +1,5 @@
-import { Header } from "./components/Header";
-import { Desafios } from "./components/Desafios";
-
+import { Header } from './components/Header'
+import { Desafios } from './components/Desafios'
 
 function App() {
   return (
@@ -11,4 +10,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
