@@ -1,8 +1,7 @@
 import { AboutItems } from "./AboutItems";
 import styles from "./styles.module.scss";
-import githubImg from "../../assets/logo_github.svg";
-import discordImg from "../../assets/logo_discord.svg";
-import contactImg from "../../assets/logo_contact.svg";
+import { FaGithub, FaDiscord } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 export const About = () => {
   return (
@@ -12,15 +11,15 @@ export const About = () => {
 
       <AboutItems />
 
-      <div className={styles.box_icon}>
-        <a href="https://github.com/tecnocrias">
-          <img src={githubImg} alt="" />
+      <div className={styles.box_icon} aria-label="Box de contatos">
+        <a href="https://github.com/tecnocrias" role="Acesso ao Github do Tecnocrias" target="_blank" rel="nofollow noreferrer">
+          <FaGithub/>
         </a>
-        <a href="https://discord.gg/adxvNfMM88">
-          <img src={discordImg} alt="" />
+        <a href="https://discord.gg/adxvNfMM88" role="Acesso ao Discord do Tecnocrias" target="_blank" rel="nofollow noreferrer">
+          <FaDiscord/>
         </a>
-        <a href="https://discord.gg/adxvNfMM88">
-          <img src={contactImg} alt="" />
+        <a href="mailto:tecnolets@gmail.com" role="Acesso ao email do Tecnocrias" target="_blank" rel="nofollow noreferrer">
+          <MdEmail/>
         </a>
         
       </div>

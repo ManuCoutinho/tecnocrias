@@ -55,8 +55,9 @@
   @include flex(center);
   flex-direction: row;
 
-  img {
-    width: 50%;
+  svg {
+    color: var(--primary);
+    font-size: 4rem;
     margin: 0 2rem;
   }
 }
