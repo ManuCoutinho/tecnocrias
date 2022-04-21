@@ -1,0 +1,45 @@
+@import '../../styles/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.container {
+  width: 80vw;
+  padding: 1rem;
+  margin: $global_margin_default;
+  text-align: center;
+  color: $white;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.card {
+  background-color: $info;
+  color: $text;
+  padding: 2rem 1.5rem;
+  border-radius: $global_radius;
+  margin: 0.5rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 3px 9px $highlight);
+  transform: scale(1.02);
+}
