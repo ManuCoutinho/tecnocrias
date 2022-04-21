@@ -28,7 +28,7 @@
   <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Iniciando</a> &#xa0; | &#xa0;
   <a href="#memo-license">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/tecnocrias" target="_blank">Author</a>
+  <a href="https://github.com/tecnocrias" target="_blank">Autor</a>
 </p>
 
 <br>
