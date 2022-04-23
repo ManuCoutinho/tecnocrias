@@ -23,6 +23,13 @@ h2 {
   margin: 2rem 0;
 }
 
+<<<<<<< HEAD:tecnocrias/src/components/Desafios/styles.module.scss
+
+.card {
+  background-color: var(--info);
+  color: var(--text);
+  width: 14rem;
+=======
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -33,6 +40,7 @@ h2 {
 .card {
   background-color: $info;
   color: $text;
+>>>>>>> main:src/components/Desafios/styles.module.scss
   padding: 2rem 1.5rem;
   border-radius: $global_radius;
   margin: 0.5rem;
@@ -42,4 +50,8 @@ h2 {
   cursor: pointer;
   filter: drop-shadow(5px 3px 9px $highlight);
   transform: scale(1.02);
+<<<<<<< HEAD:tecnocrias/src/components/Desafios/styles.module.scss
 }
+=======
+}
+>>>>>>> main:src/components/Desafios/styles.module.scss
