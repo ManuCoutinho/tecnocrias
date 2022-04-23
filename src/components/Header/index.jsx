@@ -1,6 +1,7 @@
-import { Logo } from "./Logo";
-import { NavItems } from "./NavItems";
-import styles from "./styles.module.scss";
+import { Logo } from './Logo'
+import { NavItems } from './NavItems'
+
+import styles from './styles.module.scss'
 
 export const Header = () => {
   return (
@@ -10,5 +11,5 @@ export const Header = () => {
         <NavItems />
       </nav>
     </header>
-  );
-};
+  )
+}

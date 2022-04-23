@@ -4,6 +4,11 @@
   justify-content: $justify;
 }
 
+@mixin flexContent($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
 @mixin flexDirection($direction, $wrap) {
   display: flex;
   flex-direction: $direction;
