@@ -1,25 +1,24 @@
-@import "../../styles//base/mixins/positions";
-@import "../../styles/base/variables";
-@import "../../styles/base/mixins/animations";
+@import '../../styles/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
 
-@media screen and (max-width: 575px){
-    img {
-      width: 90%;
-      margin: 0 0.4rem;
-    }  
+@media screen and (max-width: 575px) {
+  img {
+    width: 90%;
+    margin: 0 0.4rem;
+  }
 }
-
 
 .container {
   width: 80vw;
-  margin: $margin_default;
+  margin: $global_margin_default;
 
   @include flexContent(center);
   flex-direction: column;
 
   h2 {
-  font-size: 2.3rem;
-  margin: 2.5rem auto;
+    font-size: 2.3rem;
+    margin: 2.5rem auto;
   }
 }
 
@@ -33,15 +32,15 @@
   width: 100%;
   padding: 1.5rem 1rem;
   margin: 0.8rem 1rem;
-  
-  background: #1f1f1f;
-  border-radius: $radius;
-  
-  text-align: center; 
+
+  background: $bg;
+  border-radius: $global_radius;
+
+  text-align: center;
 
   h3 {
     padding: 0.5rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
   }
 
   p {
@@ -56,9 +55,8 @@
   flex-direction: row;
 
   svg {
-    color: var(--primary);
+    color: $primary;
     font-size: 4rem;
     margin: 0 2rem;
   }
 }
-
