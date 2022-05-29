@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md'
 
 export const About = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
       <h2>Sobre</h2>
 
       <AboutItems />

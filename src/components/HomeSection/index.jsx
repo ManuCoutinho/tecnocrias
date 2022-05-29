@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import Lottie from 'react-lottie'
+import { ArrowDown } from '../ArrowDown'
 import animationData from './animation.json'
 
 import styles from './styles.module.scss'
-
-// ! main html
 
 export const Home = () => {
   const [animationState, setAnimationState] = useState({
@@ -12,7 +11,6 @@ export const Home = () => {
     isPaused: false
   })
 
-  // const animationData = import('./animation.json')
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -31,6 +29,7 @@ export const Home = () => {
         isStopped={animationState.isStopped}
         isPaused={animationState.isPaused}
       />
+      <ArrowDown nextSection="#about" />
     </section>
   )
 }
