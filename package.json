@@ -1,9 +1,9 @@
 {
   "name": "tecnocrias",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "Landing page for Tecnocrias group",
+  "description": "Tecnocrias group portal",
   "bugs": {
     "url": "https://github.com/ManuCoutinho/tecnocrias"
   },
@@ -12,18 +12,18 @@
     "url": "https://github.com/ManuCoutinho/tecnocrias"
   },
   "engines": {
-    "node": ">=16.15.1",
-    "npm": ">=8.11.0"
+    "node": ">=18.16.0",
+    "npm": ">=9.5.1"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.tsx src",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "test": "NODE_ENV=test jest",
-    "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
+    "lint:css": "stylelint \"src/**/*.scss\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest --coverage",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -34,46 +34,43 @@
       "prettier --write"
     ],
     "*.css": [
-      "stylelint --fix './src/**/*.css'"
+      "stylelint --fix './src/**/*.scss'"
     ]
   },
   "dependencies": {
+    "lucide-react": "^0.261.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.2.0",
-    "@swc/core": "^1.3.11",
-    "@swc/jest": "^0.2.23",
+    "@commitlint/config-conventional": "^17.6.6",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.2.0",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "@vitejs/plugin-react": "^2.2.0",
-    "eslint": "^8.26.0",
+    "@testing-library/react": "^14.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "@vitest/coverage-v8": "^0.33.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "identity-proxy": "^0.0.1",
-    "jest": "^29.2.2",
-    "jest-environment-jsdom": "^29.2.2",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.6.2",
-    "react-icons": "^4.6.0",
-    "sass": "^1.55.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "sass": "^1.63.6",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recess-order": "^3.0.0",
-    "ts-jest": "^29.0.3",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.4",
-    "vite": "^3.2.2"
-  }
+    "vite": "^4.4.4",
+    "vitest": "^0.33.0"
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "tecnocrias",
+    "open source",
+    "sass"
+  ]
 }
