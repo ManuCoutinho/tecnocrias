@@ -38,9 +38,11 @@
     ]
   },
   "dependencies": {
-    "lucide-react": "^0.261.0",
+    "@phosphor-icons/react": "^2.0.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.6",

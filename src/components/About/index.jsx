@@ -1,7 +1,6 @@
+import { DiscordLogo, GithubLogo, Envelope } from '@phosphor-icons/react'
 import { AboutItems } from './AboutItems'
 import styles from './styles.module.scss'
-import { FaGithub, FaDiscord } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
 
 export const About = () => {
   return (
@@ -17,7 +16,7 @@ export const About = () => {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <FaGithub />
+        <GithubLogo size={32} />
         </a>
         <a
           href="https://discord.gg/adxvNfMM88"
@@ -25,7 +24,7 @@ export const About = () => {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <FaDiscord />
+         <DiscordLogo size={32} />
         </a>
         <a
           href="mailto:tecnolets@gmail.com"
@@ -33,7 +32,7 @@ export const About = () => {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <MdEmail />
+          <Envelope size={32} />
         </a>
       </div>
     </section>

@@ -34,7 +34,7 @@ html {
 body {
   background: $bg;
   color: $text;
-  font-size: $global_font_size;
+  font-size: 16px;
 }
 
 body,
@@ -42,7 +42,7 @@ input,
 button,
 select,
 textarea {
-  font: 400 1rem 'Roboto', Arial, sans-serif;
+  font: $normal 1rem 'Roboto', Arial, Ubuntu, sans-serif;
 }
 
 a {

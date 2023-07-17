@@ -1,0 +1,27 @@
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.hero__container {
+  min-width: 100%;
+  max-width: 90dvw;
+  height: 80dvh;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  & > div {
+      font-size: $lg;
+      padding: 1rem;
+      padding-left: 10rem;
+      word-wrap: break-word;
+      white-space: pre-line;
+      color: $secondary;
+      max-width: 52rem;
+      line-height: 2.5rem;
+      margin-top: 3rem;
+      font-weight: $semi_bold;
+
+      @include slideInLeft()
+    }
+
+
+}
