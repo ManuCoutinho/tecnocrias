@@ -30,7 +30,7 @@ function HeroAnimation(){
   }, [vantaEffect])
 
   return (
-    <section ref={vantaRef} className={styles.hero__container}>
+    <section ref={vantaRef} className={styles.hero__container} data-testid='hero'>
       <div>
         <p>
           Você é apaixonade por tecnologia e está ansiose para expandir seus
