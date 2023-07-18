@@ -4,10 +4,10 @@
 .hero__container {
   min-width: 100%;
   max-width: 90dvw;
-  height: 80dvh;
+  height: 95dvh;
   width: 100%;
-  display: flex;
-  align-items: baseline;
+  position: relative;
+
   & > div {
       font-size: $lg;
       padding: 1rem;
@@ -17,11 +17,12 @@
       color: $secondary;
       max-width: 52rem;
       line-height: 2.5rem;
-      margin-top: 3rem;
       font-weight: $semi_bold;
 
-      @include slideInLeft()
+      @include slideInLeft();
+      & p {
+            margin-top: 50%;
+      }
     }
-
 
 }

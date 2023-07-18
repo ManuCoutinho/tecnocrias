@@ -1,0 +1,9 @@
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.loading {
+  font-size: $xlg;
+  font-weight: $light;
+  color: $highlight;
+  @include loadingAnimation();
+}

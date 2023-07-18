@@ -1,0 +1,52 @@
+@import '../../styles/base/variables';
+
+.logo {
+  &__wrapper {
+    color: $primary;
+    padding: $global_padding_intern;
+
+  }
+
+  &__brand {
+    position: relative;
+    font-size: $big;
+    font-weight: $extra_bold;
+    letter-spacing: 3px;
+    z-index: -1;
+    margin:0;
+    animation: shadow-pulse 10s $transition-function-elastic $transition-duration-complex infinite both;
+
+    @keyframes shadow-pulse {
+      0% {
+        text-shadow: -2px 5px 4px rgba(69, 247, 193, 0.3);
+        -webkit-text-shadow: -2px 5px 2px rgba(69, 247, 193, 0.3);
+      }
+      50% {
+        text-shadow: 4px -5px 4px rgba(69, 247, 193, 0.3);
+        -webkit-text-shadow: 4px -5px 2px rgba(69, 247, 193, 0.3);
+      }
+      100% {
+        text-shadow: -2px 5px 4px rgba(69, 247, 193, 0.3);
+        -webkit-text-shadow: -2px 5px 2px rgba(69, 247, 193, 0.3);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: 'Tecnocrias';
+      color: transparent;
+      font-size: 3.6rem;
+      font-weight: $extra_bold;
+      letter-spacing: 2px;
+      bottom: 5px;
+      right: 1px;
+      left: 0;
+      z-index: 1;
+      -webkit-background: linear-gradient(170deg, #2cb67d 0%, #7f5af0 50%, #e73b95 65%, #2cb47d 80%);
+      background: linear-gradient(170deg, #2cb67d 0%, #7f5af0 50%, #e73b95 65%, #2cb47d 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+  }
+}

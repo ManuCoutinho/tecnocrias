@@ -30,15 +30,16 @@ function HeroAnimation(){
   }, [vantaEffect])
 
   return (
-    <section ref={vantaRef} className={styles.hero__container} data-testid='hero'>
+    <section
+      ref={vantaRef}
+      className={styles.hero__container}
+      data-testid="hero"
+    >
       <div>
         <p>
           Você é apaixonade por tecnologia e está ansiose para expandir seus
-          conhecimentos no mundo do código aberto? Não procure mais!
-        </p>
-        <p>
-          O Tecnocrias está te convocando para embarcar em uma jornada incrível.
-          🚀
+          conhecimentos no mundo do código aberto? Não procure mais! <br/>
+          O Tecnocrias está te convocando para embarcar em uma jornada incrível.🚀
         </p>
       </div>
     </section>

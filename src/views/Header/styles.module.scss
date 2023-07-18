@@ -1,0 +1,27 @@
+@import '../../styles/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.nav {
+  width: 100dvw;
+
+  &__wrapper {
+  @include flex(space-between);
+  gap: 3rem;
+  max-width: 80dvw;
+  width: 100%;
+  z-index: 199;
+  padding: $global_padding_extern;
+  margin: $global_margin_default;
+  margin-top: 1rem;
+
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+
+}
+
+}

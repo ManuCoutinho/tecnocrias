@@ -3,15 +3,14 @@
 exports[`<Hero/> > should render Hero correctly 1`] = `
 <div>
   <section
-    class="_hero__container_460999"
+    class="hero__container"
     data-testid="hero"
   >
     <div>
       <p>
-        Você é apaixonade por tecnologia e está ansiose para expandir seus conhecimentos no mundo do código aberto? Não procure mais!
-      </p>
-      <p>
-        O Tecnocrias está te convocando para embarcar em uma jornada incrível. 🚀
+        Você é apaixonade por tecnologia e está ansiose para expandir seus conhecimentos no mundo do código aberto? Não procure mais! 
+        <br />
+        O Tecnocrias está te convocando para embarcar em uma jornada incrível.🚀
       </p>
     </div>
   </section>

@@ -1,0 +1,17 @@
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.chevron {
+  color: $secondary;
+  font-size: $lg;
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  left: 50%;
+  @include transitionHover(color);
+
+  &:hover {
+    color:  $highlight;
+    @include transitionHover(color);
+  }
+}

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Home from './pages/Home'
+import Loading from '@/components/Loading'
 import './styles/styles.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={<Loading />}>
+      <Home />
+    </Suspense>
   </React.StrictMode>
 )

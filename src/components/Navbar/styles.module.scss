@@ -1,0 +1,34 @@
+@import '../../styles/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+
+.nav {
+  @include flex(center);
+  padding: $global_padding_extern;
+  width: fit-content;
+
+  &__menu {
+  @include flex(space-between);
+  list-style: none;
+  font-size: $wd;
+
+
+  }
+
+  &__item {
+  padding: $global_padding_intern $global_padding_extern;
+  @include transitionHover(transform);
+  outline: 0;
+
+    &:hover {
+      color: lighten($primary, 0.5);
+      transform: scale(1.1);
+      @include transitionHover(transform);
+    }
+    &:is([data-active='true'], :active, :focus) {
+      color: lighten($primary, 0.5);
+    }
+  }
+}
+

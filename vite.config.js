@@ -10,7 +10,12 @@ export default defineConfig({
   plugins: [react()],
    test: {
     globals: true,
-    environment: 'jsdom'
+    environment: 'jsdom',
+    css: {
+      modules: {
+        classNameStrategy: 'non-scoped'
+      }
+    }
   },
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, './src/') }]

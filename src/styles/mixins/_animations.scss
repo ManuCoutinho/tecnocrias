@@ -1,20 +1,20 @@
 @mixin transitionHover($item) {
-  transition: $item 0.2;
+  transition: $item 0.2s ease-in-out;
 }
 
 @mixin focusIn(){
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -23,18 +23,52 @@
 
 @mixin slideInLeft() {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
-            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 
   @keyframes slide-in-left {
     0% {
       -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
+      transform: translateX(-1000px);
       opacity: 0;
     }
     100% {
       -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
       opacity: 1;
+    }
+  }
+
+}
+
+@mixin loadingAnimation(){
+  -webkit-animation: bounce-vertical 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s infinite both;
+	animation: bounce-vertical 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s infinite both;
+  @keyframes bounce-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    80% {
+      -webkit-transform: translateY(3.4px);
+      transform: translateY(3.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-3.4px);
+      transform: translateY(-3.4px);
     }
   }
 

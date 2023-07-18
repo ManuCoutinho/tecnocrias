@@ -34,7 +34,7 @@ html {
 body {
   background: $bg;
   color: $text;
-  font-size: 16px;
+  font-size: $global_font_size;
 }
 
 body,

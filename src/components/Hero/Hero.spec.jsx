@@ -11,15 +11,16 @@ vi.mock('vanta/dist/vanta.rings.min.js')
 describe('<Hero/>', () => {
   it('should render Hero correctly', () => {
     render(<Hero/>)
-    expect(screen.getByTestId('hero')).toBeInTheDocument()
-    expect(
-      screen.getByText(
-        /O Tecnocrias está te convocando para embarcar em uma jornada incrível./i
-      )
-    ).toBeInTheDocument()
+    const description = screen.getByText(
+      /O Tecnocrias está te convocando para embarcar em uma jornada incrível/i
+    )
+    const container = screen.getByTestId('hero')
+    expect(container).toBeInTheDocument()
+    expect(description).toBeInTheDocument()
+    expect(container).toHaveClass('hero__container')
   })
   it('should render Hero correctly', () => {
-   const {container} = render(<Hero />)
+    const {container} = render(<Hero />)
     expect(container).toMatchSnapshot()
 
   })
