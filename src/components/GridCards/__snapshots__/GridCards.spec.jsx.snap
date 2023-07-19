@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<GridCards/> > should match to snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+    data-testid="grid-cards"
+  >
+    <div
+      class="grid__card"
+    >
+      <h4
+        class="grid__title"
+      >
+        title test
+      </h4>
+      <p
+        class="grid__description"
+      >
+        some description
+         
+        <a
+          href="#anchor"
+          rel="noopener noreferrer"
+        >
+          the moon
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

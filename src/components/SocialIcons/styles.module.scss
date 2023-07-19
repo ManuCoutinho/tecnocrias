@@ -1,15 +1,23 @@
 @import '../../styles/base/variables';
 @import '../../styles/mixins/positions';
+@import '../../styles/mixins/animations';
 
-.box_icon {
-  margin-top: 2rem;
+.social {
+  &__wrapper {
+    @include flex(center);
+    gap: 3rem;
+  }
 
-  @include flex(center);
-  gap: 2rem;
-  flex-direction: row;
-
-  a {
+  &__icon {
     color: $primary;
-    font-size: $xlg;
+    font-weight: $light;
+    font-size: 2.5rem;
+    @include transitionHover(color);
+
+    &:hover {
+      @include transitionHover(color);
+      filter: drop-shadow(0 -4px 6px rgba(44, 182, 125, 0.65));
+      color:  lighten($primary,  10%);
+    }
   }
 }

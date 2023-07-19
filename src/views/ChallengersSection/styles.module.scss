@@ -1,0 +1,10 @@
+@import '../../styles/mixins/mixins.scss';
+
+
+.cl {
+  &__container {
+    @include sectionContainer();
+    gap: 5rem;
+
+  }
+}

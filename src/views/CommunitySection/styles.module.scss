@@ -1,0 +1,53 @@
+@import '../../styles/mixins/layout';
+@import '../../styles/mixins/positions';
+@import '../../styles/mixins/animations';
+@import '../../styles/base/variables';
+
+.com {
+  &__container {
+    @include sectionContainer();
+  }
+
+
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__banner {
+
+    width: 100%;
+
+
+    img {
+      max-width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      filter:sepia(0.5);
+      -webkit-filter: sepia(0.5);
+      border: 2px solid $info;
+      box-shadow: 1px 1px 5px rgba(155, 155, 155, 0.5);
+      -webkit-box-shadow: 1px 1px 5px rgba(155, 155, 155, 0.5);
+      @include transitionHover(filter);
+
+      &:hover {
+        filter: hue-rotate(180deg);
+        -webkit-filter: hue-rotate(180deg);
+        @include transitionHover(filter);
+      }
+    }
+  }
+
+  &__description {
+    padding: $global_padding_intern;
+    p {
+      line-height: 2rem;
+      font-size: $md;
+
+    }
+  }
+}

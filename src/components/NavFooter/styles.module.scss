@@ -1,0 +1,51 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/base/variables';
+
+
+.nf {
+  &__wrapper {
+    @include flex(space-around);
+    gap: 2rem;
+    padding: $global_padding_extern;
+    width: 100%;
+
+  }
+
+  &__title {
+    border-bottom: 1px solid $highlight;
+    display: inline-block;
+
+    p {
+      font-size: $wd;
+      font-weight: $semi_bold;
+      color: $secondary;
+      line-height: 2rem;
+      padding-bottom: 0.5rem;
+    }
+
+  }
+
+  &__list {
+    padding: 1rem;
+
+    >ul {
+      @include flexDirection(column, nowrap);
+      font-size: $wd;
+      margin-top: 1rem;
+      gap: 1rem;
+      list-style-type: none;
+
+      li {
+        gap: 0.5rem;
+        @include flex(flex-start);
+        @include transitionHover(color);
+
+        &:hover {
+          @include transitionHover(color);
+          color: $highlight;
+        }
+      }
+
+    }
+  }
+}

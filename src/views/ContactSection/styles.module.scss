@@ -1,0 +1,74 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/base/variables';
+
+
+.ct {
+  &__container {
+    max-width: 100dvw;
+    width: 100%;
+    height: 100dvh;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 2rem;
+
+  }
+
+  &__wrapper {
+    @include flex(space-evenly);
+    gap: 2rem;
+  }
+
+  &__copyright {
+    color: $text;
+    @include flex(flex-end);
+    gap: 1rem;
+    border-top: 1px solid $info;
+    margin-top: 2rem;
+    padding: 2rem;
+
+  }
+
+  &__mail{
+    width: 50%;
+    padding: 1rem;
+    @include flexDirection(column, wrap);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    p {
+      font-size: $wd;
+      line-height: 2rem;
+    }
+
+    button {
+      max-width: 30%;
+      padding: 1rem 1.5rem;
+      @include flex(center);
+      gap: 0.5rem;
+      background: $info;
+      color: $secondary;
+      border: 1px solid $text;
+      border-radius: 8px;
+      @include transitionHover(background-color);
+
+      &:is(:hover, :active, :focus) {
+        background: $highlight;
+        @include transitionHover(background-color);
+      }
+    }
+
+  }
+}

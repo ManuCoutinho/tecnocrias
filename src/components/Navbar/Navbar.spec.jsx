@@ -8,7 +8,7 @@ import { Navbar } from '.'
 vi.spyOn(React, 'useState')
 describe('<Navbar/>', () => {
   it('should render Navbar correctly ', () => {
-    render(<Navbar/>)
+    render(<Navbar />)
     const home = screen.getByRole('menuitem', { name: /home/i })
     expect(screen.getByRole('navigation')).toBeInTheDocument()
     expect(screen.getByRole('menu')).toBeInTheDocument()
@@ -16,17 +16,16 @@ describe('<Navbar/>', () => {
     expect(home.parentNode).toHaveAttribute('href', '#home')
     expect(screen.getByRole('menuitem', { name: /sobre/i })).toBeInTheDocument()
     expect(
-       screen.getByRole('menuitem', { name: /desafios/i })
-     ).toBeInTheDocument()
+      screen.getByRole('menuitem', { name: /desafios/i })
+    ).toBeInTheDocument()
     expect(
-        screen.getByRole('menuitem', { name: /contato/i })
-      ).toBeInTheDocument()
+      screen.getByRole('menuitem', { name: /contato/i })
+    ).toBeInTheDocument()
     expect(
-         screen.getByRole('menuitem', { name: /comunidade/i })
-       ).toBeInTheDocument()
-
+      screen.getByRole('menuitem', { name: /comunidade/i })
+    ).toBeInTheDocument()
   })
-   it('should render the menu item with status active when selected', () => {
+  it('should render the menu item with status active when selected', () => {
     render(<Navbar />)
     const about = screen.getByRole('link', { name: /sobre/i })
     expect(about).toHaveAttribute('data-active', 'false')
@@ -34,9 +33,9 @@ describe('<Navbar/>', () => {
       fireEvent.click(about)
     })
     expect(about).toHaveAttribute('data-active', 'true')
-   })
+  })
   it('should match to snapshot', () => {
-    const { container } = render(<Navbar/>)
+    const { container } = render(<Navbar />)
     expect(container).toMatchSnapshot()
-  });
- })
+  })
+})

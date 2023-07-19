@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
-  export const SectionTitle = ({ title, subtitle, size = 'md' }) => {
-
-
+export const SectionTitle = ({ title, subtitle, size = 'md' }) => {
   return (
-    <div>
-      <h3 className={styles.title} data-size={size}>{title}</h3>
-      {subtitle && <p className={styles.title__subtitle}>{subtitle}</p>}
+    <div className={styles.sc}>
+      <h3 className={styles.sc__title} data-size={size}>
+        {title}
+      </h3>
+      {subtitle && <p className={styles.sc__subtitle}>{subtitle}</p>}
     </div>
   )
 }

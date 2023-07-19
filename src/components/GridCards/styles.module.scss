@@ -5,7 +5,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 3.5rem;
   place-content: center;
   color: $text;
   padding: $global_padding_extern;
@@ -40,9 +40,10 @@
       text-decoration-thickness: 2px;
       text-underline-offset: 2px;
       @include transitionHover(color);
+      cursor: pointer;
 
-      &:is(:hover, :active, :focus){
-        color: darken($highlight, 0.3);
+      &:hover {
+        color: lighten($highlight, 10%);
         @include transitionHover(color)
       }
     }

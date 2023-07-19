@@ -4,15 +4,14 @@ import { SocialIcons } from '@/components/SocialIcons'
 import ABOUT from '@/constants/cardsAbout'
 import styles from './styles.module.scss'
 
-
-  const AboutSection = () => {
+const About = () => {
   return (
     <section className={styles.about__container} id="about">
-      <SectionTitle title="Sobre" size='md' />
+      <SectionTitle title="Sobre" size="md" />
       <Cards cardList={ABOUT} />
-      <SocialIcons/>
+      <SocialIcons />
     </section>
   )
 }
 
-export default AboutSection
+export default About

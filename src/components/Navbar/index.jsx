@@ -2,13 +2,12 @@ import { useState } from 'react'
 import NAV_DATA from '@/constants/navigation'
 import styles from './styles.module.scss'
 
-
 export const Navbar = () => {
   const [location, setLocation] = useState(null)
 
   return (
-     <nav className={styles.nav}>
-      <ul className={styles.nav__menu} role='menu' aria-controls='menuitem'>
+    <nav className={styles.nav}>
+      <ul className={styles.nav__menu} role="menu" aria-controls="menuitem">
         {NAV_DATA.map(({ name, path }) => {
           return (
             <a
@@ -25,6 +24,6 @@ export const Navbar = () => {
           )
         })}
       </ul>
-     </nav>
+    </nav>
   )
 }

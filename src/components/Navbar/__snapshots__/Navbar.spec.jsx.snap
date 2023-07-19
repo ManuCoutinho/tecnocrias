@@ -37,6 +37,18 @@ exports[`<Navbar/> > should match to snapshot 1`] = `
       <a
         class="nav__item"
         data-active="false"
+        href="#community"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Comunidade
+        </li>
+      </a>
+      <a
+        class="nav__item"
+        data-active="false"
         href="#challengers"
       >
         <li
@@ -44,18 +56,6 @@ exports[`<Navbar/> > should match to snapshot 1`] = `
           tabindex="1"
         >
           Desafios
-        </li>
-      </a>
-      <a
-        class="nav__item"
-        data-active="false"
-        href="#comunity"
-      >
-        <li
-          role="menuitem"
-          tabindex="1"
-        >
-          Comunidade
         </li>
       </a>
       <a

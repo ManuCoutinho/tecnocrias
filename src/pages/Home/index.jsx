@@ -1,15 +1,19 @@
-import Header  from '@/views/Header'
+import About from '@/views/AboutSection'
 import Challengers from '@/views/ChallengersSection'
-import AboutSection from '@/views/AboutSection'
-import { HomeSection } from '@/views/HomeSection'
+import Community from '@/views/CommunitySection'
+import Contact from '@/views/ContactSection'
+import Header from '@/views/Header'
+import HomeSection from '@/views/HomeSection'
 
 function Home() {
   return (
     <main>
       <Header />
       <HomeSection />
-      <AboutSection />
-      <Challengers/>
+      <About />
+      <Community />
+      <Challengers />
+      <Contact />
     </main>
   )
 }

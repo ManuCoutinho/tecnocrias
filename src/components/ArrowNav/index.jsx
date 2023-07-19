@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export const ArrowNav = props => {
   return (
-    <span className={styles.chevron} data-testid='arrow-down'>
+    <span className={styles.chevron} data-testid="arrow-down">
       <a href={props.nextSection} aria-label="navigate to bottom">
         <CaretDoubleDown />
       </a>

@@ -1,6 +1,5 @@
 @use './base/global';
 @use './base/variables';
-@use './mixins/positions';
-@use './mixins/layout';
+@use './mixins/mixins';
 @use './base/breakpoints';
 @use './vendor/normalize';

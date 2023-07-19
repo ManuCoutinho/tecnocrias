@@ -1,13 +1,13 @@
 import { Suspense, lazy } from 'react'
 import { ArrowNav } from '@/components/ArrowNav'
-import Loading  from '@/components/Loading'
+import Loading from '@/components/Loading'
 import styles from './styles.module.scss'
 
 const Hero = lazy(() => import('@/components/Hero'))
 
-export const HomeSection = () => {
+const HomeSection = () => {
   return (
-    <section className={styles.main__container} id='home'>
+    <section className={styles.main__container} id="home">
       <Suspense fallback={<Loading />}>
         <Hero />
       </Suspense>
@@ -15,3 +15,5 @@ export const HomeSection = () => {
     </section>
   )
 }
+
+export default HomeSection

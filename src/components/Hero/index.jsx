@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import RINGS from 'vanta/dist/vanta.rings.min.js'
 import styles from './styles.module.scss'
 
-function HeroAnimation(){
+function HeroAnimation() {
   const [vantaEffect, setVantaEffect] = useState(null)
   const vantaRef = useRef(null)
 
   useEffect(() => {
-    if(!vantaEffect){
+    if (!vantaEffect) {
       setVantaEffect(() =>
         RINGS({
           el: vantaRef.current,
@@ -25,7 +25,7 @@ function HeroAnimation(){
     }
 
     return () => {
-      if(vantaEffect) vantaEffect.destroy()
+      if (vantaEffect) vantaEffect.destroy()
     }
   }, [vantaEffect])
 
@@ -38,8 +38,8 @@ function HeroAnimation(){
       <div>
         <p>
           Você é apaixonade por tecnologia e está ansiose para expandir seus
-          conhecimentos no mundo do código aberto? Não procure mais! <br/>
-          O Tecnocrias está te convocando para embarcar em uma jornada incrível.🚀
+          conhecimentos no mundo do código aberto? Não procure mais! <br />O
+          Tecnocrias está te convocando para embarcar em uma jornada incrível.🚀
         </p>
       </div>
     </section>

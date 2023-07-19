@@ -1,5 +1,5 @@
 import { Logo } from '@/components/Logo'
-import { Navbar} from '@/components/Navbar'
+import { Navbar } from '@/components/Navbar'
 
 import styles from './styles.module.scss'
 

@@ -10,7 +10,7 @@ vi.spyOn(React, 'useRef')
 vi.mock('vanta/dist/vanta.rings.min.js')
 describe('<Hero/>', () => {
   it('should render Hero correctly', () => {
-    render(<Hero/>)
+    render(<Hero />)
     const description = screen.getByText(
       /O Tecnocrias está te convocando para embarcar em uma jornada incrível/i
     )
@@ -20,8 +20,7 @@ describe('<Hero/>', () => {
     expect(container).toHaveClass('hero__container')
   })
   it('should render Hero correctly', () => {
-    const {container} = render(<Hero />)
+    const { container } = render(<Hero />)
     expect(container).toMatchSnapshot()
-
   })
- })
+})

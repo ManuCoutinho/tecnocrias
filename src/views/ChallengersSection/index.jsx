@@ -1,19 +1,14 @@
+import { SectionTitle } from '@/components/SectionTitle'
 import { Cards } from '@/components/GridCards'
+import CHALLENGERS from '@/constants/challengers'
 import styles from './styles.module.scss'
-
 
 const Challengers = () => {
   return (
-    <div className={styles.container} id="challengers">
-      <h2>Desafios</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus numquam
-        commodi omnis deleniti! Reprehenderit fuga quos cupiditate et.
-      </p>
-      <div className={styles.cardsContainer}>
-        <Cards />
-      </div>
-    </div>
+    <section className={styles.cl__container} id="challengers">
+      <SectionTitle title="Desafios" />
+      <Cards cardList={CHALLENGERS} />
+    </section>
   )
 }
 

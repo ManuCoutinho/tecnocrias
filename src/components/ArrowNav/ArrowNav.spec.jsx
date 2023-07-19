@@ -1,14 +1,15 @@
 import '@testing-library/jest-dom'
 import { screen, render } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import {ArrowNav} from '.'
+import { ArrowNav } from '.'
 
 describe('<ArrowNav/>', () => {
   it('should render ArrowNav correctly ', () => {
-    render(<ArrowNav nextSection='#about' />)
+    render(<ArrowNav nextSection="#about" />)
     expect(screen.getByTestId('arrow-down')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /navigate to bottom/i})).toHaveAttribute('href', '#about')
-
+    expect(
+      screen.getByRole('link', { name: /navigate to bottom/i })
+    ).toHaveAttribute('href', '#about')
   })
   it('should match to snapshot ', () => {
     const { container } = render(<ArrowNav nextSection="#about" />)
@@ -38,4 +39,4 @@ describe('<ArrowNav/>', () => {
       </div>
     `)
   })
- })
+})
