@@ -1,6 +1,6 @@
 import Header  from '@/views/Header'
-import { Desafios } from '@/components/Desafios'
-import { About } from '@/components/About'
+import Challengers from '@/views/ChallengersSection'
+import AboutSection from '@/views/AboutSection'
 import { HomeSection } from '@/views/HomeSection'
 
 function Home() {
@@ -8,8 +8,8 @@ function Home() {
     <main>
       <Header />
       <HomeSection />
-      <About />
-      <Desafios />
+      <AboutSection />
+      <Challengers/>
     </main>
   )
 }

@@ -1,0 +1,8 @@
+@import '../../styles/mixins/layout';
+
+.about {
+  &__container {
+    @include sectionContainer();
+    gap: 4rem;
+  }
+}

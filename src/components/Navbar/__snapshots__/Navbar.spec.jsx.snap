@@ -1,0 +1,76 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Navbar/> > should match to snapshot 1`] = `
+<div>
+  <nav
+    class="nav"
+  >
+    <ul
+      aria-controls="menuitem"
+      class="nav__menu"
+      role="menu"
+    >
+      <a
+        class="nav__item"
+        data-active="false"
+        href="#home"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Home
+        </li>
+      </a>
+      <a
+        class="nav__item"
+        data-active="false"
+        href="#about"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Sobre
+        </li>
+      </a>
+      <a
+        class="nav__item"
+        data-active="false"
+        href="#challengers"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Desafios
+        </li>
+      </a>
+      <a
+        class="nav__item"
+        data-active="false"
+        href="#comunity"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Comunidade
+        </li>
+      </a>
+      <a
+        class="nav__item"
+        data-active="false"
+        href="#contact"
+      >
+        <li
+          role="menuitem"
+          tabindex="1"
+        >
+          Contato
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+`;

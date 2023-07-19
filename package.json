@@ -32,9 +32,6 @@
     ],
     "*.{json,md, yaml}": [
       "prettier --write"
-    ],
-    "*.css": [
-      "stylelint --fix './src/**/*.scss'"
     ]
   },
   "dependencies": {
@@ -63,8 +60,6 @@
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
     "sass": "^1.63.6",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-recess-order": "^3.0.0",
     "vite": "^4.4.4",
     "vitest": "^0.33.0"
   },

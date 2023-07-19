@@ -1,0 +1,11 @@
+@import '../base/variables';
+
+@mixin sectionContainer() {
+  max-width: $global_max_width;
+  width: 100%;
+  height: 100dvh;
+  padding: 10rem $global_padding_extern;
+  margin: $global_margin_default;
+  display: flex;
+  flex-direction: column;
+}

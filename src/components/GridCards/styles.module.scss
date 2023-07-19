@@ -1,0 +1,51 @@
+@import '../../styles/mixins/positions';
+@import '../../styles/base/variables';
+@import '../../styles/mixins/animations';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  place-content: center;
+  color: $text;
+  padding: $global_padding_extern;
+
+
+  &__title {
+    font-size: $wd;
+    font-weight: $semi_bold;
+    line-height: 2rem;
+    color: $secondary;
+    text-align: center;
+  }
+
+  &__card {
+    background: $info;
+    border: 1px solid #363a3e;
+    border-radius: $global_radius;
+    @include flexDirection(column, nowrap);
+    gap: 1rem;
+    padding: $global_padding_extern 2rem;
+    min-height: 17.5rem;
+  }
+
+  &__description {
+    font-size: $md;
+    line-height: $global_line_height;
+    text-align: justify;
+
+    & a {
+      color: $highlight;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+      @include transitionHover(color);
+
+      &:is(:hover, :active, :focus){
+        color: darken($highlight, 0.3);
+        @include transitionHover(color)
+      }
+    }
+  }
+}
+

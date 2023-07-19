@@ -1,0 +1,15 @@
+@import '../../styles/base/variables';
+@import '../../styles/mixins/positions';
+
+.box_icon {
+  margin-top: 2rem;
+
+  @include flex(center);
+  gap: 2rem;
+  flex-direction: row;
+
+  a {
+    color: $primary;
+    font-size: $xlg;
+  }
+}
