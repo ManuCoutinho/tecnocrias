@@ -2,13 +2,13 @@
   "name": "App",
   "icons": [
     {
-      "src": "/icons8-afro-edt.im-outline-72.png",
+      "src": "/icons/android-icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "density": "1.5"
     },
     {
-      "src": "/icons8-afro-edt.im-outline-96.png",
+      "src": "/icons/android-icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "density": "2.0"
